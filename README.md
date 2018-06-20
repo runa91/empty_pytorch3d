@@ -1,6 +1,10 @@
 # empty_tensorflow
 Repo containing Tensorflow+Keras installation scripts for MPI-IS cluster
 
+Clone the repo to your home folder:
+
+	git clone https://github.com/sergeyprokudin/empty_tensorflow
+
 To install, run
 
 	bash scripts/install.sh
