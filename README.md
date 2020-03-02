@@ -18,7 +18,7 @@ To use newly created environment, run
 On the cluster, add the following lines to your ~/.bashrc file or run them before starting the virtual environment:
 	
 	module load cuda/10.1
-    	module load cudnn/7.5-cu10.1
+	module load cudnn/7.5-cu10.1
 	
 Most likely the following lines are not needed in the ~/.bashrc file:
 
