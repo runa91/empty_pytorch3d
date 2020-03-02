@@ -30,7 +30,7 @@ Most likely the following lines are not needed in the ~/.bashrc file:
 
 You might want to add the following to the ~/.bashrc file:
 
-	alias aenv_torch="{ module load cuda/10.1 ; .  module load cudnn/7.5-cu10.1 ; ~/empty_pytorch3d/py_env_torch/bin/activate ; }"
+	alias aenv_torch="{ module load cuda/10.1 ; .  module load cudnn/7.5-cu10.1 ; /lustre/home/empty_pytorch3d/py_env_torch/bin/activate ; }"
 	
 To run an example job on the cluster:
 
