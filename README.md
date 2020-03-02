@@ -48,5 +48,5 @@ To run an example job on the cluster:
 	cd /lustre/home/nrueegg/empty_pytorch3d
 	condor_submit_bid 300 example/run_example.sub
 	
-Python, CUDA, cuDNN and Python versions can be changed. To do so modify scripts/install.sh.
+Python, CUDA and cuDNN versions can be changed. To do so modify scripts/install.sh.
 
