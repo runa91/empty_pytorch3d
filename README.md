@@ -1,7 +1,7 @@
 # empty_pytorch3d
 Repo containing Cuda10.1 and pytorch3d installation scripts for MPI-IS cluster
 
-Clone the repo to your home folder:
+Clone the repo to your home folder (in my case /lustre/home/nrueegg/):
 
 	cd /lustre/home/nrueegg/
 	git clone https://github.com/runa91/empty_pytorch3d  
