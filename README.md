@@ -13,7 +13,7 @@ To install, run
 
 To use newly created environment, run
 
-	source py_env/bin/activate
+	source py_env_torch/bin/activate
 	
 On the cluster, add the following lines to your ~/.bashrc file or run them before starting the virtual environment:
 	
