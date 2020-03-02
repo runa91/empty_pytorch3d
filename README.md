@@ -37,7 +37,7 @@ To run an example job on the cluster:
 1.) Interactive job
 
 	condor_submit_bid 300 -i -append request_gpus=1 -append request_memory=30000 -append 'requirements = CUDAGlobalMemoryMb > 10000'
-	aenv_pytorch
+	aenv_torch
 	cd /lustre/home/nrueegg/empty_pytorch3d
 	python example/torch3d_example.py
 	
