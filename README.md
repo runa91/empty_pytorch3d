@@ -42,6 +42,7 @@ To run an example job on the cluster:
 	python example/torch3d_example.py
 	
 2.) Non-interactive job
+
 First, make sure that all paths within example/run_example.sub and example/run_example.sh are correct.
 
 	condor_submit_bid 300
