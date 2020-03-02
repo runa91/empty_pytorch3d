@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 source ~/.bashrc
 
+# --- VERSION 1:
+'''module load cuda/10.1
+module load cudnn/7.5-cu10.1
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
-PYENV="${SCRIPT_DIR}/../py_env"
-source ${PYENV}/bin/activate
+PYENV="${SCRIPT_DIR}/../py_env_torch"
+source ${PYENV}/bin/activate'''
 
-CUDNNPATH="/is/software/nvidia/cudnn-7.0-cu9.0/lib64"
-export LD_LIBRARY_PATH=${CUDNNPATH}:$LD_LIBRARY_PATH
-CUDAPATH="/is/software/nvidia/cuda-9.0/lib64"
-export LD_LIBRARY_PATH=${CUDAPATH}:$LD_LIBRARY_PATH
+# --- VERSION 2:
+aenv_torch
 
-python -m ipykernel install --user --name=py_env
+
+python -m ipykernel install --user --name=py_env_torch
 
 jupyter notebook --no-browser --port=8898 --ip=0.0.0.0
