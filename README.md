@@ -1,5 +1,5 @@
 # empty_pytorch3d
-Repo containing Cuda10.1 and pytorch3d installation scripts for MPI-IS cluster
+Repo containing Python-3.7, CUDA-10.1, cuDNN-7.5 and pytorch3d installation scripts for MPI-IS cluster. 
 
 Clone the repo to your home folder (in my case /lustre/home/nrueegg/):
 
@@ -48,5 +48,5 @@ To run an example job on the cluster:
 	cd /lustre/home/nrueegg/empty_pytorch3d
 	condor_submit_bid 300 example/run_example.sub
 	
-
+Python, CUDA, cuDNN and Python versions can be changed. To do so modify scripts/install.sh.
 
