@@ -51,10 +51,10 @@ dbash::user_confirm() {
 }
 
 
-dbash::cluster_cuda() {
-    local LPATH="/usr/local/cudnn-5.1/lib64"
-    if [[ -d ${LPATH} ]];then
-        dbash::pp "cudnn cluster ${LPATH}"
-        export LD_LIBRARY_PATH=${LPATH}:$LD_LIBRARY_PATH
-    fi
-}
+#dbash::cluster_cuda() {
+#    local LPATH="/usr/local/cudnn-5.1/lib64"
+#    if [[ -d ${LPATH} ]];then
+#        dbash::pp "cudnn cluster ${LPATH}"
+#        export LD_LIBRARY_PATH=${LPATH}:$LD_LIBRARY_PATH
+#    fi
+#}

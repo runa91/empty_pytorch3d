@@ -1,0 +1,14 @@
+executable = /bin/bash
+arguments = /lustre/home/nrueegg/empty_pytorch3d/example/run_example.sh
+error = /lustre/home/nrueegg/empty_pytorch3d/example/logs/log.err
+output = /lustre/home/nrueegg/empty_pytorch3d/example/logs/log.out
+log = /lustre/home/nrueegg/empty_pytorch3d/example/logs/log.log
+request_memory = 15000
+request_cpus = 1
+request_gpus = 1
+concurrency_limits=horse_exp:501
+requirements = CUDACapability>=7.0
+MaxTime = 432000
+periodic_hold = (CurrentTime - JobCurrentStartDate) >= $(MaxTime)
+periodic_hold_reason = "Job runtime exceeded"
+queue 1

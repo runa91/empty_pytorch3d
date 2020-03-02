@@ -109,3 +109,7 @@ logs/
 *.h5
 *.xml
 *.iml
+example/data/
+example/logs/
+pytorch3d_unused
+py_env_torch
