@@ -43,7 +43,7 @@ To run an example job on the cluster:
 	
 2.) Non-interactive job
 
-First, make sure that all paths within example/run_example.sub and example/run_example.sh are correct.
+    First, make sure that all paths within example/run_example.sub and example/run_example.sh are correct.
 
 	condor_submit_bid 300
 	cd /lustre/home/nrueegg/empty_pytorch3d
