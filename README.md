@@ -59,3 +59,8 @@ smplx installation is added
 
 -> the code will be in /lustre/home/nrueegg/empty_pytorch3d/external_packages/smplx
 
+example usage
+
+	import smplx
+	import smplx.create
+	smplx.create('/lustre/home/nrueegg/empty_pytorch3d/external_packages/smplx/models/', gender='neutral')
