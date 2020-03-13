@@ -62,4 +62,4 @@ Python, CUDA and cuDNN versions can be changed. To do so modify scripts/install.
 example usage:
 
 	import smplx
-	model = smplx.create('/lustre/home/nrueegg/empty_pytorch3d/external_packages/smplx/models/', gender='neutral')
+	model = smplx.create('/lustre/home/nrueegg/empty_pytorch3d/external_packages/smplx/models/', gender='neutral', model_type='smpl')
