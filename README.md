@@ -50,3 +50,8 @@ To run an example job on the cluster:
 	
 Python, CUDA and cuDNN versions can be changed. To do so modify scripts/install.sh.
 
+
+NEW: smplx installation is added 
+-> you need to add the body models manually (as described in https://github.com/vchoutas/smplx)
+-> the code will be in /lustre/home/nrueegg/empty_pytorch3d/external_packages/smplx
+
