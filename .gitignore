@@ -113,3 +113,4 @@ example/data/
 example/logs/
 pytorch3d_unused
 py_env_torch
+external_packages

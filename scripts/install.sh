@@ -45,7 +45,9 @@ if [[ "y" == "${USER_CONFIRM_RESULT}" ]];then
     ${PYENV}/bin/pip install --upgrade pip
     ${PYENV}/bin/pip install --upgrade numpy scipy matplotlib joblib ipdb python-gflags google-apputils autopep8 sklearn
     ${PYENV}/bin/pip install --upgrade pandas ipython ipdb jupyter theano opencv-python h5py keras wget jsanimation
-    ${PYENV}/bin/pip install --upgrade tqdm imageio scikit-image ipykernel
+    ${PYENV}/bin/pip install --upgrade tqdm imageio scikit-image ipykernel opendr
+    ${PYENV}/bin/pip install --smplx[all]
+
 fi
 
 #dbash::user_confirm ">> Install tensorflow (CPU-only)?" "n"
@@ -86,4 +88,11 @@ dbash::pp "# We install pytorch3d"
 ${PYENV}/bin/pip install 'git+https://github.com/facebookresearch/pytorch3d.git'
 # cd ${SCRIPT_DIR}/../pytorch3d && ${PYENV}/bin/pip install -e .
 
+mkdir ${PROJECT_DIR}/external_packages 
+cd ${PROJECT_DIR}/external_packages
+git clone https://github.com/vchoutas/smplx
+python setup.py install
+
+
 python -m ipykernel install --user --name=py_env_torch
+ 
