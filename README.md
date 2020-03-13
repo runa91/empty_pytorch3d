@@ -53,7 +53,7 @@ Python, CUDA and cuDNN versions can be changed. To do so modify scripts/install.
 
 ----------------------------------------- NEW -----------------------------------------
 
-smplx installation is added 
+1.) smplx installation is added 
 
 -> you need to add the body models manually (as described in https://github.com/vchoutas/smplx)
 
