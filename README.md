@@ -59,7 +59,7 @@ smplx installation is added
 
 -> the code will be in /lustre/home/nrueegg/empty_pytorch3d/external_packages/smplx
 
-example usage
+example usage:
 
 	import smplx
 	import smplx.create
